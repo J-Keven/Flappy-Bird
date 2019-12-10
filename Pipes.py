@@ -28,5 +28,11 @@ class Pipe():
 
     def getPisitios(self):
         pass
-        
+    
+    @property
+    def get_y(self):
+        return (self.image_higth, self.image_higth +  self.__passage)
 
+    @property
+    def get_x(self):
+        return self.start
