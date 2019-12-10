@@ -52,12 +52,24 @@ while True:
 
     for index,i in enumerate(pipes):
         i.update(SCREEN)
+        print(i.get_x)
+        if flap.get_x == i.get_x :
+            y_pipes = i.get_y
+            print(y_pipes)
+            if flap.get_y <= y_pipes[0]:
+                pygame.quit()
+                pass
+
+            elif flap.get_y >= y_pipes[1]:
+                pygame.quit()
+                pass
+                
+            pass
+
         if i.start <= -50:
-            print(last)
             i.start = pipes[last].start + 200
             i.image_higth = rd.randint(150, 350)
             last = index
-            print(last)
 
     group_base.draw(SCREEN)
     SCREEN.blit(base.image, (base.rect[0]+SCREENWIDTH,SCREENHEIGTH - 100))
@@ -68,6 +80,10 @@ while True:
         time.sleep(10)
         pygame.quit()
     
+    if None:
+        pass
+
     elif None:
         pass
+
     pygame.display.update()
