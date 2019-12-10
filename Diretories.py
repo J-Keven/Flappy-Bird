@@ -1,0 +1,7 @@
+BIRDUP = 'image/bluebird-upflap.png'
+BIRDMID = 'image/bluebird-midflap.png'
+BIRDDOWN = 'image/bluebird-downflap.png'
+BACKGOUND = 'image/background-day.png'
+FLOOR = 'image/base.png'
+OBSTACLE = 'image/pipe-green.png'
+GAMEOVER = 'image/gameover.png'
