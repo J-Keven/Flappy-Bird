@@ -7,7 +7,7 @@ class Pipe():
     def __init__(self, width, heigth):
         
         self.screenwhidth = width
-        self.__passage = 80
+        self.__passage = 90
         self.image_higth = rd.randint(150, 350)
         self.__obstacle = [
             pygame.image.load(D.OBSTACLE).convert_alpha(),
@@ -16,7 +16,7 @@ class Pipe():
         self.__obstacle[1] = pygame.transform.scale(self.__obstacle[1],(52,400))
         self.__obstacle[1] = pygame.transform.flip(self.__obstacle[1],0,1)
         self.start = width
-        self.__sleep = 5
+        self.__sleep = 4
 
     def update(self, SCREEN):
         SCREEN.blit(self.__obstacle[1],(self.start,self.image_higth - 400))
