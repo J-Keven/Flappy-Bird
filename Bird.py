@@ -48,3 +48,13 @@ class Bird(pygame.sprite.Sprite):
     @property
     def get_y(self):
         return self.rect[1]
+
+    @property
+    def get_heigth(self):
+        return self.rect[-1]
+
+    @property
+    def get_width(self):
+        return self.rect[2]
+
+    
