@@ -66,7 +66,7 @@ while True:
 
     for index,i in enumerate(pipes):
         i.update(SCREEN)
-        if flap.get_x >= i.get_x and flap.get_x <= i.get_x + 52: 
+        if flap.get_x + 30 >= i.get_x and flap.get_x <= i.get_x + 52: 
             y_pipes = i.get_y
             if flap.get_y - 1  < y_pipes[0]:
                 GameOver(SCREEN,BACKGROUND, base.image)

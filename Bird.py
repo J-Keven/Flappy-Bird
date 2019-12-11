@@ -16,12 +16,13 @@ class Bird(pygame.sprite.Sprite):
         self.rect[0] = self.y
         self.rect[1] = self.x
         self.__caindo = True
+        print(self.rect)
 
     def LoadImagens(self):
         imagens = [
-            pygame.image.load( D.BIRDUP).convert_alpha(),
-            pygame.image.load(D.BIRDMID).convert_alpha(),
-            pygame.image.load( D.BIRDDOWN).convert_alpha()]
+            pygame.transform.scale(pygame.image.load( D.BIRDUP).convert_alpha(),(35,24)),
+            pygame.transform.scale(pygame.image.load(D.BIRDMID).convert_alpha(),(35,24)),
+            pygame.transform.scale(pygame.image.load( D.BIRDDOWN).convert_alpha(),(35,24))]
         return imagens
     
     def jump(self):
